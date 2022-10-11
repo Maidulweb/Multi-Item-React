@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ClickCounter from "./component/ClickCounter";
+import HoverCounter from "./component/HoverCounter";
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-around">
+      <div className="p-4 text-center uppercase text-lg font-bold">
+        <ClickCounter />
+      </div>
+      <div className="p-4 text-center uppercase text-lg font-bold">
+        <HoverCounter />
+      </div>
+      <div className="p-4 text-center uppercase text-lg font-bold">
+        <ClickCounter />
+      </div>
     </div>
   );
 }
